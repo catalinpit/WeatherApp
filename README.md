@@ -1,13 +1,13 @@
-**# Make another copy of the application on your computer.**
-**# Make changes only on your computer.**
-**# When everything is done and works properly, only then push to github and add a meaningful message to what you did.**
+## Make another copy of the application on your computer.
+## Make changes only on your computer.
+## When everything is done and works properly, only then push to github and add a meaningful message to what you did.
 
 
 ## Commands needed:
 
 ``` bash
 # 1st step
-# Before making any change make sure you have the updated files on your computer
+# Before making any changes make sure you have the updated files on your computer
 # To do so, use:
 git pull
 
