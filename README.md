@@ -1,6 +1,10 @@
 -- Lane added to test commit --
 -- Lane added by Anees to test12 git --
 
+```
+Lane added by Shah to test git on Mac -- 
+```
+
 # preact material app
 
 Super performant `Material` app for preact world using [preact-material-components](https://github.com/prateekbh/preact-material-components)
