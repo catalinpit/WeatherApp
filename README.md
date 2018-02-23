@@ -1,7 +1,7 @@
 ## GROUP 33 - Iphone Weather Application
 
 ## Contributors:
-- Chowdhury, Masud Hasan - check to see if it works
+- Chowdhury, Masud Hasan 
 - Ghani, Omar
 - Hasnatuz, Zaharia
 - Imran, Anees
