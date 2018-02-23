@@ -1,7 +1,7 @@
 ## GROUP 33 - Iphone Weather Application
 
 ## Contributors:
-- Chowdhury, Masud Hasan
+- Chowdhury, Masud Hasan - check to see if it works
 - Ghani, Omar
 - Hasnatuz, Zaharia
 - Imran, Anees
@@ -24,7 +24,7 @@ git pull
 
 # 2nd step
 # Adds your modified files to the queue to be committed later. (files are not commited yet)
-git add . 
+git add .
 
 # 3rd step
 # Commits the files created/added/modified and creates a new revision with a log
@@ -35,6 +35,3 @@ git commit -m "meaningful message"
 # Push the changes to Github
 git push -u origin master
 ```
-
-
-
