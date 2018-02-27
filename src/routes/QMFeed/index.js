@@ -8,25 +8,10 @@ export default class QMFeed extends Component {
 	render() {
 		return (
 			<div class={style.QMFeed}>
-				
 
-					<iframe src="https://feed.mikle.com/widget/v2/66981/" height="672px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
 
-				/**
-				<Card>
-					<Card.Primary>
-						<Card.Title>Home card</Card.Title>0
-						<Card.Subtitle>Welcome to our22 unfinished weather application!</Card.Subtitle>
-					</Card.Primary>
-					<Card.SupportingText>
-						Shah was here
-						Now his not
-					</Card.SupportingText>
-					<Card.Actions>
-						<Card.Action>OKAY</Card.Action>
-					</Card.Actions>
-				</Card>
-				*******/
+					<iframe src="https://feed.mikle.com/widget/v2/66981/" height="640px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
+
 			</div>
 		);
 	}
