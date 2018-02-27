@@ -34,6 +34,7 @@ export default class Header extends Component {
 
 	goHome = this.linkTo('/');
 	goToMyProfile = this.linkTo('/profile');
+	goToQMFeed = this.linkTo('/QMFeed');
 
 	toggleDarkTheme = () => {
 		this.setState(
@@ -77,6 +78,10 @@ export default class Header extends Component {
 							<List.LinkItem onClick={this.goToMyProfile}>
 								<List.ItemIcon>account_circle</List.ItemIcon>
 								Profile
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToQMFeed}>
+								<List.ItemIcon>QMFeed</List.ItemIcon>
+								QM Feed
 							</List.LinkItem>
 						</List>
 					</Drawer.TemporaryDrawerContent>
