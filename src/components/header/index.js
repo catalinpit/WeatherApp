@@ -61,7 +61,7 @@ export default class Header extends Component {
 							<Toolbar.Icon menu onClick={this.openDrawer}>
 								menu
 							</Toolbar.Icon>
-							<Toolbar.Title>Preact app</Toolbar.Title>
+							<Toolbar.Title>QWeather</Toolbar.Title>
 						</Toolbar.Section>
 						<Toolbar.Section align-end onClick={this.openSettings}>
 							<Toolbar.Icon>settings</Toolbar.Icon>
