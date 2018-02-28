@@ -5,6 +5,7 @@ import Header from './header';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
 import QMFeed from '../routes/QMFeed';
+import Settings from '../routes/Settings';
 // import Home from 'async!../routes/home';
 // import Profile from 'async!../routes/profile';
 
@@ -26,6 +27,7 @@ export default class App extends Component {
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
 					<QMFeed path="/QMFeed/" />
+					<Settings path="/Settings/" />
 				</Router>
 			</div>
 		);

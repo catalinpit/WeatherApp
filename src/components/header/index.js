@@ -35,6 +35,7 @@ export default class Header extends Component {
 	goHome = this.linkTo('/');
 	goToMyProfile = this.linkTo('/profile');
 	goToQMFeed = this.linkTo('/QMFeed');
+	goToSettings = this.linkTo('/Settings');
 
 	toggleDarkTheme = () => {
 		this.setState(
@@ -64,7 +65,7 @@ export default class Header extends Component {
 							<Toolbar.Title>QWeather</Toolbar.Title>
 						</Toolbar.Section>
 						<Toolbar.Section align-end onClick={this.openSettings}>
-							<Toolbar.Icon>settings</Toolbar.Icon>
+							<Toolbar.Icon>search</Toolbar.Icon>
 						</Toolbar.Section>
 					</Toolbar.Row>
 				</Toolbar>
@@ -82,6 +83,10 @@ export default class Header extends Component {
 							<List.LinkItem onClick={this.goToQMFeed}>
 								<List.ItemIcon>QMFeed</List.ItemIcon>
 								QM Feed
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToSettings}>
+								<List.ItemIcon>Settings</List.ItemIcon>
+								Settings
 							</List.LinkItem>
 						</List>
 					</Drawer.TemporaryDrawerContent>
