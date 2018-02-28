@@ -17,18 +17,26 @@ export default class Home extends Component {
 		this.state.locate = "";
 		this.state.temp = "";
 		this.state.feelslike = "";
+		this.state.humidity = "";
+		this.state.windspeed = "";
+		this.state.weather = "";
+		this.state.weatherimg = "";
 	}
 
 	// get the API data from Wunderground
 	getData = function(){
     	$.ajax({
-    		url: 'http://api.wunderground.com/api/214f1e00746632d6/conditions/q/UK/London.json',
+    		url: 'http://api.wunderground.com/api/214f1e00746632d6/conditions/forecast/geolookup/q/autoip.json',
     		dataType: 'jsonp',
     		// on success, fetch the data and set the state
     		success: function(parsed_json){
       			this.setState({locate: parsed_json['current_observation']['display_location']['full']});
       			this.setState({temp: parsed_json['current_observation']['temp_c']});
       			this.setState({feelslike: parsed_json['current_observation']['feelslike_c']});
+      			this.setState({humidity: parsed_json['current_observation']['relative_humidity']});
+      			this.setState({windspeed: parsed_json['current_observation']['wind_kph']});
+      			this.setState({weather: parsed_json['current_observation']['weather']});
+      			this.setState({weatherimg: parsed_json['current_observation']['icon_url']});
     		}.bind(this) // creates a new function that, when called, has its this keyword
     					 // set to the provided value 
     	});
@@ -45,7 +53,6 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div class={style.home}>
-
 			<Card>
 				<Card.Primary>
 					<Card.Title><h1> {this.state.locate} </h1></Card.Title>
@@ -53,10 +60,12 @@ export default class Home extends Component {
 					</Card.Primary>
 
 					<Card.SupportingText>
-						<p>Current temperature: {this.state.temp}</p>
-						<p>Feels like: {this.state.feelslike}</p>
+						<p>Current temperature: {this.state.temp} ℃</p>
+						<p>Weather conditions: {this.state.weather} <img src={this.state.weatherimg} /></p>
+						<p>Real feel: {this.state.feelslike} ℃</p>
+						<p>Humidity: {this.state.humidity}</p>
+						<p>Wind speed: {this.state.windspeed} km/h</p>
 					</Card.SupportingText>
-					
 					<Card.Actions>
 					<Card.Action>OKAY</Card.Action>
 					</Card.Actions>
