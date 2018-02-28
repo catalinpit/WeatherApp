@@ -75,5 +75,3 @@ export default class Home extends Component {
 		);
 	} 
 }
-
-// am adaugat humidity, weather conditions, wind speed, forecast (chance of rain)
