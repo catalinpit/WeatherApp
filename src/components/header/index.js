@@ -81,11 +81,11 @@ export default class Header extends Component {
 								Profile
 							</List.LinkItem>
 							<List.LinkItem onClick={this.goToQMFeed}>
-								<List.ItemIcon>QMFeed</List.ItemIcon>
+								<List.ItemIcon>mail</List.ItemIcon>
 								QM Feed
 							</List.LinkItem>
 							<List.LinkItem onClick={this.goToSettings}>
-								<List.ItemIcon>Settings</List.ItemIcon>
+								<List.ItemIcon>settings</List.ItemIcon>
 								Settings
 							</List.LinkItem>
 						</List>
