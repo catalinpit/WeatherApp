@@ -33,7 +33,7 @@ export default class Header extends Component {
 	};
 
 	goHome = this.linkTo('/');
-	goToMyProfile = this.linkTo('/profile');
+	goToQMPlus = this.linkTo('/QMPlus');
 	goToQMFeed = this.linkTo('/QMFeed');
 	goToSettings = this.linkTo('/Settings');
 
@@ -76,12 +76,12 @@ export default class Header extends Component {
 								<List.ItemIcon>home</List.ItemIcon>
 								Home
 							</List.LinkItem>
-							<List.LinkItem onClick={this.goToMyProfile}>
+							<List.LinkItem onClick={this.goToQMPlus}>
 								<List.ItemIcon>account_circle</List.ItemIcon>
-								Profile
+								QM Plus
 							</List.LinkItem>
 							<List.LinkItem onClick={this.goToQMFeed}>
-								<List.ItemIcon>mail</List.ItemIcon>
+								<List.ItemIcon>chrome_reader_mode</List.ItemIcon>
 								QM Feed
 							</List.LinkItem>
 							<List.LinkItem onClick={this.goToSettings}>

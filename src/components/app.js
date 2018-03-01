@@ -3,7 +3,7 @@ import { Router } from 'preact-router';
 
 import Header from './header';
 import Home from '../routes/home';
-import Profile from '../routes/profile';
+import QMPlus from '../routes/QMPlus';
 import QMFeed from '../routes/QMFeed';
 import Settings from '../routes/Settings';
 // import Home from 'async!../routes/home';
@@ -24,8 +24,7 @@ export default class App extends Component {
 				<Header />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
+					<QMPlus path="/QMPlus/" />
 					<QMFeed path="/QMFeed/" />
 					<Settings path="/Settings/" />
 				</Router>

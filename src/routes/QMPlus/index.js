@@ -3,7 +3,7 @@ import Button from 'preact-material-components/Button';
 import 'preact-material-components/Button/style.css';
 import style from './style';
 
-export default class Profile extends Component {
+export default class QMPlus extends Component {
 	state = {
 		time: Date.now(),
 		count: 10
