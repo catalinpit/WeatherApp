@@ -33,9 +33,11 @@ export default class Header extends Component {
 	};
 
 	goHome = this.linkTo('/');
-	goToQMPlus = this.linkTo('/QMPlus');
+	goToQMPlus = () => {
+		window.open("http://qmplus.qmul.ac.uk/", "_blank");
+	}
 	goToQMFeed = this.linkTo('/QMFeed');
-	goToSettings = this.linkTo('/Settings');
+
 
 	toggleDarkTheme = () => {
 		this.setState(
@@ -84,7 +86,7 @@ export default class Header extends Component {
 								<List.ItemIcon>chrome_reader_mode</List.ItemIcon>
 								QM Feed
 							</List.LinkItem>
-							<List.LinkItem onClick={this.goToSettings}>
+							<List.LinkItem onClick={this.openSettings}>
 								<List.ItemIcon>settings</List.ItemIcon>
 								Settings
 							</List.LinkItem>
