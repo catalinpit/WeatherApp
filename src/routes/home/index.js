@@ -13,7 +13,7 @@ export default class Home extends Component {
 	// a constructor with initial set states
 	constructor(props) {
 		super(props);
-		// empty states intially 
+		// empty states intially
 		this.state.locate = "";
 		this.state.temp = "";
 		this.state.feelslike = "";
@@ -38,12 +38,12 @@ export default class Home extends Component {
       			this.setState({weather: parsed_json['current_observation']['weather']});
       			this.setState({weatherimg: parsed_json['current_observation']['icon_url']});
     		}.bind(this) // creates a new function that, when called, has its this keyword
-    					 // set to the provided value 
+    					 // set to the provided value
     	});
   	}
 
   	// executed after the first render only on the client side
-  	// where AJAX requests and DOM or state updates should occur 
+  	// where AJAX requests and DOM or state updates should occur
   	// used to update the state so other lifecycle methods are triggered
   	componentDidMount = function() {
   		this.getData();
@@ -55,23 +55,21 @@ export default class Home extends Component {
 			<div class={style.home}>
 			<Card>
 				<Card.Primary>
-					<Card.Title><h1> {this.state.locate} </h1></Card.Title>
-						<Card.Subtitle>The temperature looks as follow:</Card.Subtitle>
+					<div class = {style.realFeel}><p>Real feel: {this.state.feelslike} °C</p></div>
+					<div class = {style.currentTemp}><p>{this.state.temp} °C</p></div>
+					<p>Weather conditions: {this.state.weather} <img src={this.state.weatherimg} /></p>
 					</Card.Primary>
 
 					<Card.SupportingText>
-						<p>Current temperature: {this.state.temp} ℃</p>
-						<p>Weather conditions: {this.state.weather} <img src={this.state.weatherimg} /></p>
-						<p>Real feel: {this.state.feelslike} ℃</p>
+						<p> {this.state.locate}</p>
+
+
 						<p>Humidity: {this.state.humidity}</p>
 						<p>Wind speed: {this.state.windspeed} km/h</p>
 					</Card.SupportingText>
-					<Card.Actions>
-					<Card.Action>OKAY</Card.Action>
-					</Card.Actions>
 				</Card>
 
 			</div>
 		);
-	} 
+	}
 }

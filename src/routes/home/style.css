@@ -3,7 +3,16 @@
 	min-height: 100%;
 	width: 100%;
 }
-#card1
+.realFeel
 {
-	min-height: 200%
+ align: center;
+ font-size: 18px;
+ margin-top: -25px;
+}
+.currentTemp
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	margin-top: -25px;
 }
