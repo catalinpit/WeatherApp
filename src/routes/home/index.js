@@ -21,12 +21,18 @@ export default class Home extends Component {
 		this.state.windspeed = "";
 		this.state.weather = "";
 		this.state.weatherimg = "";
+		this.state.sunrise_hour = "";
+		this.state.sunset_hour = "";
+		this.state.sunrise_minute = "";
+		this.state.sunset_minute = "";
+		this.state.uvindex = "";
+		this.state.visibility = "";
 	}
 
 	// get the API data from Wunderground
 	getData = function(){
     	$.ajax({
-    		url: 'http://api.wunderground.com/api/214f1e00746632d6/conditions/forecast/geolookup/q/autoip.json',
+    		url: 'http://api.wunderground.com/api/214f1e00746632d6/conditions/astronomy/forecast/geolookup/q/autoip.json',
     		dataType: 'jsonp',
     		// on success, fetch the data and set the state
     		success: function(parsed_json){
@@ -37,6 +43,12 @@ export default class Home extends Component {
       			this.setState({windspeed: parsed_json['current_observation']['wind_kph']});
       			this.setState({weather: parsed_json['current_observation']['weather']});
       			this.setState({weatherimg: parsed_json['current_observation']['icon_url']});
+      			this.setState({sunrise_hour: parsed_json['sun_phase']['sunrise']['hour']});
+      			this.setState({sunset_hour: parsed_json['sun_phase']['sunset']['hour']});
+      			this.setState({sunrise_minute: parsed_json['sun_phase']['sunrise']['minute']});
+      			this.setState({sunset_minute: parsed_json['sun_phase']['sunset']['minute']});
+      			this.setState({uvindex: parsed_json['current_observation']['UV']});
+      			this.setState({visibility: parsed_json['current_observation']['visibility_km']});
     		}.bind(this) // creates a new function that, when called, has its this keyword
     					 // set to the provided value
     	});
@@ -65,8 +77,11 @@ export default class Home extends Component {
 					<Card.SupportingText>
 						<p> {this.state.locate}</p>
 
-
+						<p>Sunrise: {this.state.sunrise_hour}:{this.state.sunrise_minute}</p>
+						<p>Sunset: {this.state.sunset_hour}:{this.state.sunset_minute}</p>
 						<p>Humidity: {this.state.humidity}</p>
+						<p>UV Index: {this.state.uvindex}</p>
+						<p>Visibility: {this.state.visibility} km</p>
 
 					</Card.SupportingText>
 				</Card>
