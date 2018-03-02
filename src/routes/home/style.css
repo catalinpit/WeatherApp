@@ -5,17 +5,17 @@
 }
 .realFeel
 {
-    align: center;
-    font-size: 18px;
-    margin-top: -25px;
-    font-weight: 500;
+ align: center;
+ font-size: 18px;
+ font-weight: 500;
+ margin-top: -10px;
 }
 .currentTemp
 {
 	text-align: center;
 	font-weight: bold;
 	font-size: 40px;
-	margin-top: -25px;
+	margin-top: -30px;
 }
 .cweatherImg
 {
@@ -31,16 +31,27 @@
 .windSpeed
 {
 	font-weight: 500;
+	text-align: right;
+	font-size: 18px;
+	margin-top: -41px;
 }
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+.locationAddress
+{
+	font-size: 25px;
+	text-align: center;
+	margin-top: -30px;
+	font-weight: 500;
 }
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 0 auto;
+.sunriseTime
+{
+	font-size: 18px;
+	font-weight: 500;
+	text-align: left;
+}
+.sunsetTime
+{
+	font-size: 18px;
+	font-weight: 500;
+	text-align: right;
+	margin-top: -41px;
 }
