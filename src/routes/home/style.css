@@ -3,9 +3,13 @@
 	min-height: 100%;
 	width: 100%;
 }
+.locationCard
+{
+	padding: 10px;
+}
 .realFeel
 {
- align: center;
+ text-align: center;
  font-size: 18px;
  font-weight: 500;
  margin-top: -10px;
@@ -31,9 +35,9 @@
 .windSpeed
 {
 	font-weight: 500;
-	text-align: right;
+	text-align: center;
 	font-size: 18px;
-	margin-top: -41px;
+
 }
 .locationAddress
 {
@@ -54,4 +58,22 @@
 	font-weight: 500;
 	text-align: right;
 	margin-top: -41px;
+}
+.uvStyle
+{
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+}
+.humidityStyle
+{
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+}
+.visibilityStyle
+{
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
 }

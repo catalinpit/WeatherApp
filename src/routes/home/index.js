@@ -67,9 +67,9 @@ export default class Home extends Component {
 					<div class = {style.weatherInfo}><p>{this.state.weather}</p></div>
 					<div class = {style.sunriseTime}><p>Sunrise: {this.state.sunrise_hour}:{this.state.sunrise_minute}</p></div>
 					<div class = {style.sunsetTime}><p>Sunset: {this.state.sunset_hour}:{this.state.sunset_minute}</p></div>
-					<p>Humidity: {this.state.humidity}</p>
-					<p>UV Index: {this.state.uvindex}</p>
-					<p>Visibility: {this.state.visibility} km</p>
+					<div class = {style.humidityStyle}><p>Humidity: {this.state.humidity}</p></div>
+					<div class = {style.uvStyle}><p>UV Index: {this.state.uvindex}</p></div>
+					<div class = {style.visibilityStyle}><p>Visibility: {this.state.visibility} km</p></div>
 					</Card.Primary>
 				</Card>
       </div>
