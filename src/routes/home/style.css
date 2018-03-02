@@ -5,10 +5,10 @@
 }
 .realFeel
 {
- align: center;
- font-size: 18px;
- margin-top: -25px;
- font-weight: 500;
+    align: center;
+    font-size: 18px;
+    margin-top: -25px;
+    font-weight: 500;
 }
 .currentTemp
 {
@@ -31,4 +31,16 @@
 .windSpeed
 {
 	font-weight: 500;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 0 auto;
 }
