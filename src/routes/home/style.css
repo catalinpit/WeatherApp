@@ -8,6 +8,7 @@
  align: center;
  font-size: 18px;
  margin-top: -25px;
+ font-weight: 500;
 }
 .currentTemp
 {
@@ -15,4 +16,19 @@
 	font-weight: bold;
 	font-size: 40px;
 	margin-top: -25px;
+}
+.cweatherImg
+{
+	text-align: center;
+	margin-top: -25px;
+}
+.weatherInfo
+{
+	text-align: center;
+	font-weight: 500;
+	margin-top: -20px;
+}
+.windSpeed
+{
+	font-weight: 500;
 }

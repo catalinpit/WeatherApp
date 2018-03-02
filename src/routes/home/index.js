@@ -57,7 +57,9 @@ export default class Home extends Component {
 				<Card.Primary>
 					<div class = {style.realFeel}><p>Real feel: {this.state.feelslike} °C</p></div>
 					<div class = {style.currentTemp}><p>{this.state.temp} °C</p></div>
-					<p>Weather conditions: {this.state.weather} <img src={this.state.weatherimg} /></p>
+					<div class = {style.cweatherImg}><p> <img src={this.state.weatherimg} /></p></div>
+					<div class = {style.weatherInfo}><p>{this.state.weather}</p></div>
+					<div class = {style.windSpeed}><p>Wind speed: {this.state.windspeed} km/h</p></div>
 					</Card.Primary>
 
 					<Card.SupportingText>
@@ -65,7 +67,7 @@ export default class Home extends Component {
 
 
 						<p>Humidity: {this.state.humidity}</p>
-						<p>Wind speed: {this.state.windspeed} km/h</p>
+
 					</Card.SupportingText>
 				</Card>
 
