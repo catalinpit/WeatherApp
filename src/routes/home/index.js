@@ -60,6 +60,12 @@ export default class Home extends Component {
 				<Card>
 					<Card.Primary>
 						<div class = {style.locationAddress}><p> {this.state.locate}</p></div>
+					</Card.Primary>
+				</Card>
+
+				<Card>
+					<Card.Primary>
+
 						<div class = {style.realFeel}><p>Real feel: {this.state.feelslike} °C</p></div>
 						<div class = {style.windSpeed}><p>Wind speed: {this.state.windspeed} km/h</p></div>
 						<div class = {style.currentTemp}><p>{this.state.temp} °C</p></div>
@@ -69,7 +75,6 @@ export default class Home extends Component {
 						<div class = {style.sunsetTime}><p>Sunset: {this.state.sunset_hour}:{this.state.sunset_minute}</p></div>
 						<div class = {style.humidityStyle}><p>Humidity: {this.state.humidity}</p></div>
 						<div class = {style.uvStyle}><p>UV Index: {this.state.uvindex}</p></div>
-						<div class = {style.visibilityStyle}><p>Visibility: {this.state.visibility} km</p></div>
 					</Card.Primary>
 				</Card>
       </div>
@@ -89,6 +94,5 @@ export default class Home extends Component {
             this.setState({sunrise_minute: parsed_json['sun_phase']['sunrise']['minute']});
             this.setState({sunset_minute: parsed_json['sun_phase']['sunset']['minute']});
             this.setState({uvindex: parsed_json['current_observation']['UV']});
-            this.setState({visibility: parsed_json['current_observation']['visibility_km']});
         }
 }
