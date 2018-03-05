@@ -3,10 +3,7 @@
 	min-height: 100%;
 	width: 100%;
 }
-.locationCard
-{
-	padding: 0px;
-}
+
 .realFeel
 {
  text-align: center;
@@ -63,13 +60,14 @@
 }
 .uvStyle
 {
-	text-align: center;
+	text-align: right;
 	font-weight: 500;
 	font-size: 18px;
+	margin-top: -41px;
 }
 .humidityStyle
 {
-	text-align: center;
+	text-align: left;
 	font-weight: 500;
 	font-size: 18px;
 }
