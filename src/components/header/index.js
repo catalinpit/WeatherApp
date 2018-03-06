@@ -81,7 +81,7 @@ export default class Header extends Component {
 								Home
 							</List.LinkItem>
 							<List.LinkItem onClick={this.goToHourlyForecast}>
-								<List.ItemIcon>forecast</List.ItemIcon>
+								<List.ItemIcon>cloud</List.ItemIcon>
 								Hourly Forecast
 							</List.LinkItem>
 							<List.LinkItem onClick={this.goToQMPlus}>

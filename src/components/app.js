@@ -3,6 +3,7 @@ import { Router } from 'preact-router';
 
 import Header from './header';
 import Home from '../routes/home';
+import hourlyForecast from '../routes/hourlyForecast';
 import QMPlus from '../routes/QMPlus';
 import QMFeed from '../routes/QMFeed';
 import Settings from '../routes/Settings';
