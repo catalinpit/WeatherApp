@@ -24,6 +24,7 @@ export default class App extends Component {
 				<Header />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
+					<hourlyForecast path="/hourlyForecast" />
 					<QMPlus path="/QMPlus/" />
 					<QMFeed path="/QMFeed/" />
 					<Settings path="/Settings/" />

@@ -33,6 +33,8 @@ export default class Header extends Component {
 	};
 
 	goHome = this.linkTo('/');
+	goToHourlyForecast = this.linkTo('/hourlyForecast');
+
 	goToQMPlus = () => {
 		window.open("http://qmplus.qmul.ac.uk/", "_blank");
 	}
@@ -77,6 +79,10 @@ export default class Header extends Component {
 							<List.LinkItem onClick={this.goHome}>
 								<List.ItemIcon>home</List.ItemIcon>
 								Home
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToHourlyForecast}>
+								<List.ItemIcon>forecast</List.ItemIcon>
+								Hourly Forecast
 							</List.LinkItem>
 							<List.LinkItem onClick={this.goToQMPlus}>
 								<List.ItemIcon>account_circle</List.ItemIcon>
