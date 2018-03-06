@@ -4,10 +4,10 @@ import 'preact-material-components/Card/style.css';
 import 'preact-material-components/Button/style.css';
 import style from './style';
 
-export default class hourlyForecast extends Component {
+export default class Forecast extends Component {
 	render() {
 		return (
-				<div class={style.hourlyForecast}>
+				<div class={style.Forecast}>
 					<Card>
 						<Card.Primary>
 							<iframe src="https://feed.mikle.com/widget/v2/69051/" height="670px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>

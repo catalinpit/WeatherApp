@@ -3,7 +3,7 @@ import { Router } from 'preact-router';
 
 import Header from './header';
 import Home from '../routes/home';
-import hourlyForecast from '../routes/hourlyForecast';
+import Forecast from '../routes/Forecast';
 import QMPlus from '../routes/QMPlus';
 import QMFeed from '../routes/QMFeed';
 import Settings from '../routes/Settings';
@@ -25,7 +25,7 @@ export default class App extends Component {
 				<Header />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
-					<hourlyForecast path="/hourlyForecast" />
+					<Forecast path="/Forecast/" />
 					<QMPlus path="/QMPlus/" />
 					<QMFeed path="/QMFeed/" />
 					<Settings path="/Settings/" />
