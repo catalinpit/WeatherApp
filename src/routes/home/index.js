@@ -97,23 +97,21 @@ export default class Home extends Component {
 
         <Card>
           <Card.Primary>
-            <div class={style.home}>
               {this.state.hourly.slice(0, 6).map((hour) => (
-                <table>
-                  <thead>
+                <div class={style.home}>
+                  <table class="center">
                     <tr>
                       <th>{hour['FCTTIME'].civil}</th>
                     </tr>
-                  </thead>
 
-                  <tr>
-                    <p><img src={hour.icon_url} /></p>
-                    <p>Temperature: {hour['temp'].metric} °C</p>
-                    <p>Chance of rain: {hour.pop}%</p>
-                  </tr>
-                </table>
+                    <center>
+                      <p><img src={hour.icon_url} /></p>
+                      <p>Temperature: {hour['temp'].metric} °C</p>
+                      <p>Chance of rain: {hour.pop}%</p>
+                    </center>
+                  </table>
+                </div>
               ))}
-            </div>
           </Card.Primary>
         </Card>
       </div>
