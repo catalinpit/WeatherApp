@@ -95,7 +95,7 @@ export default class Home extends Component {
 						<div class = {style.visibilityStyle}><p>Visibility: {this.state.visibility} km</p></div>
 					</Card.Primary>
 				</Card>
-        
+
         <Card>
           <Card.Primary>
             <div class={style.home}>
