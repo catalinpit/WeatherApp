@@ -38,7 +38,7 @@ export default class Home extends Component {
   // get the API data from Wunderground
   getData = function(){
       $.ajax({
-        url: 'http://api.wunderground.com/api/214f1e00746632d6/conditions/astronomy/forecast/hourly/q/UK/London.json',
+        url: 'http://api.wunderground.com/api/214f1e00746632d6/conditions/astronomy/forecast/q/UK/London.json',
         dataType: 'jsonp',
         // on success, fetch the data and set the state
         success: this.parseResponse,
