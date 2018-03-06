@@ -79,21 +79,26 @@ export default class Home extends Component {
   render() {
     return (
       <div class={style.home}>
-				<Card>
-					<Card.Primary>
-						<div class = {style.locationAddress}><p> {this.state.locate}</p></div>
-						<div class = {style.realFeel}><p>Real feel: {this.state.feelslike} °C</p></div>
-						<div class = {style.windSpeed}><p>Wind speed: {this.state.windspeed} km/h</p></div>
-						<div class = {style.currentTemp}><p>{this.state.temp} °C</p></div>
-						<div class = {style.cweatherImg}><p> <img src={this.state.weatherimg} /></p></div>
-						<div class = {style.weatherInfo}><p>{this.state.weather}</p></div>
-						<div class = {style.sunriseTime}><p>Sunrise: {this.state.sunrise_hour}:{this.state.sunrise_minute}</p></div>
-						<div class = {style.sunsetTime}><p>Sunset: {this.state.sunset_hour}:{this.state.sunset_minute}</p></div>
-						<div class = {style.humidityStyle}><p>Humidity: {this.state.humidity}</p></div>
-						<div class = {style.uvStyle}><p>UV Index: {this.state.uvindex}</p></div>
-						<div class = {style.visibilityStyle}><p>Visibility: {this.state.visibility} km</p></div>
-					</Card.Primary>
-				</Card>
+      <Card>
+        <Card.Primary>
+          <div class = {style.locationAddress}><p> {this.state.locate}</p></div>
+        </Card.Primary>
+      </Card>
+
+      <Card>
+        <Card.Primary>
+
+          <div class = {style.realFeel}><p>Real feel: {this.state.feelslike} °C</p></div>
+          <div class = {style.windSpeed}><p>Wind speed: {this.state.windspeed} km/h</p></div>
+          <div class = {style.currentTemp}><p>{this.state.temp} °C</p></div>
+          <div class = {style.cweatherImg}><p> <img src={this.state.weatherimg} /></p></div>
+          <div class = {style.weatherInfo}><p>{this.state.weather}</p></div>
+          <div class = {style.sunriseTime}><p>Sunrise: {this.state.sunrise_hour}:{this.state.sunrise_minute}</p></div>
+          <div class = {style.sunsetTime}><p>Sunset: {this.state.sunset_hour}:{this.state.sunset_minute}</p></div>
+          <div class = {style.humidityStyle}><p>Humidity: {this.state.humidity}</p></div>
+          <div class = {style.uvStyle}><p>UV Index: {this.state.uvindex}</p></div>
+        </Card.Primary>
+      </Card>
 
         <Card>
           <Card.Primary>

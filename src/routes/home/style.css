@@ -3,7 +3,6 @@
 	min-height: 100%;
 	width: 100%;
 }
-
 .realFeel
 {
  text-align: center;
@@ -60,14 +59,13 @@
 }
 .uvStyle
 {
-	text-align: right;
+	text-align: center;
 	font-weight: 500;
 	font-size: 18px;
-	margin-top: -41px;
 }
 .humidityStyle
 {
-	text-align: left;
+	text-align: center;
 	font-weight: 500;
 	font-size: 18px;
 }
@@ -76,16 +74,4 @@
 	text-align: center;
 	font-weight: 500;
 	font-size: 18px;
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
 }
