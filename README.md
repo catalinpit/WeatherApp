@@ -7,6 +7,7 @@
 - Imran, Anees
 - Iqram, Shah
 - Pit, Catalin-Marinel
+> Implemented API and everything that belongs to it
 
 ## Before commiting:
 > Make another copy of the application on your computer.
