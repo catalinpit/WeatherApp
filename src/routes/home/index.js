@@ -61,7 +61,6 @@ export default class Home extends Component {
       fetch('http://api.wunderground.com/api/214f1e00746632d6/hourly/q/UK/London.json')
         .then((response) => response.json())
         .then((data) => {
-          console.log(data.hourly_forecast);
           this.setState({
             hourly: data.hourly_forecast,
           });
