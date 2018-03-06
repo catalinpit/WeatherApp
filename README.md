@@ -1,4 +1,4 @@
-## GROUP 33 - Iphone Weather Application
+## GROUP 33 Graphical User Interface Module - Iphone Weather Application
 
 ## Contributors:
 - Chowdhury, Masud Hasan 
@@ -8,6 +8,12 @@
 - Iqram, Shah
 - Pit, Catalin-Marinel
 > Implemented API and everything that belongs to it
+
+## Install dependencies:
+> npm install
+
+## Run the application:
+> npm run dev
 
 ## Before commiting:
 > Make another copy of the application on your computer.
