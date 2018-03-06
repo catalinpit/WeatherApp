@@ -99,7 +99,7 @@ export default class Home extends Component {
           <Card.Primary>
               {this.state.hourly.slice(0, 6).map((hour) => (
                 <div class={style.home}>
-                  <table class="center">
+                  <table>
                     <tr>
                       <th>{hour['FCTTIME'].civil}</th>
                     </tr>
