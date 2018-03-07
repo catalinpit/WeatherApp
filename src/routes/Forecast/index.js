@@ -61,20 +61,30 @@ export default class Forecast extends Component {
   render() {
     return (
       <div class={style.forecastCard}>
+				<Card>
+					<Card.Primary>
+						<div class = {style.forecastTitle}><p>Hourly Forecast</p></div>
+					</Card.Primary>
+				</Card>
         <Card>
           <Card.Primary>
               {this.state.hourly.slice(0, 6).map((hour) => (
                 <div>
-                  <table>
+                  <table width = "300">
                     <tr>
-                      <th>{hour['FCTTIME'].civil}</th>
+											<th rowspan = "2">{hour['FCTTIME'].civil}</th>
+											<td></td>
                     </tr>
-
-                    <center>
-                      <div class = {style.hourStyle}><p><img src={hour.icon_url} /></p></div>
-                      <p>Temperature: {hour['temp'].metric} °C</p>
-                      <p>Chance of rain: {hour.pop}%</p>
-                    </center>
+										<tr>
+										<td></td>
+										<div class = {style.forecastData}>
+										<td>
+										<div class = {style.imgStyle}><p><img src={hour.icon_url} /></p></div>
+										<div class = {style.tempStyle}><p>Temperature: {hour['temp'].metric} °C</p></div>
+										<div class = {style.rainStyle}><p>Chance of rain: {hour.pop}%</p></div>
+										</td>
+										</div>
+										</tr>
                   </table>
                 </div>
               ))}
