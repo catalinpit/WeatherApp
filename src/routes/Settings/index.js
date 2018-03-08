@@ -9,9 +9,6 @@ export default class Settings extends Component {
 		return (
 			<div class={style.Settings}>
 
-
-					<iframe src="https://feed.mikle.com/widget/v2/66981/" height="640px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
-
 			</div>
 		);
 	}

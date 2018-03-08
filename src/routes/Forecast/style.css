@@ -1,36 +1,49 @@
-.forecastCard {
-	padding: 20px;
+/***********************************************************************
+
+													CSS for Forecast Page
+
+***********************************************************************/
+
+.forecastCard
+{
+	padding: 20px; /* Adds spacing around the div container */
 	min-height: 100%;
 	width: 100%;
 }
+
 .forecastTitle
 {
 	font-size: 25px;
-	text-align: center;
-	margin-top: -30px;
-	margin-bottom: -30px;
+	text-align: center; /* Place the feature of the api in the center of the page */
+	margin-top: -30px; /* Reduce margin space from top of the feature */
+	margin-bottom: -30px; /* Reduce margin space from bottom of the feature */
 	font-weight: 500;
 }
+
 .forecastData
 {
-	text-align: center;
-	padding-left: 52px;
-	padding-top: -50px;
+	text-align: center; /* Place the feature of the api in the center of the page */
+	padding-left: 52px; /* Adds spacing to the left of the div container */
+	padding-top: -50px; /* reduce spacing to the top of the div container */
 }
+
 .tempStyle
 {
-	margin-top: -20px;
+	margin-top: -20px; /* Reduce margin space from top of the feature */
 }
+
 .imgStyle
 {
-	margin-top: -20px;
+	margin-top: -20px; /* Reduce margin space from top of the feature */
 }
+
 .rainStyle
 {
-	margin-top: -10px;
+	margin-top: -10px; /* Reduce margin space from top of the feature */
 }
+
 table
 {
-	border-top: 1px solid black;
+	border-top: 1px solid black; /* set border with colour */
 	width: 300px;
 }
