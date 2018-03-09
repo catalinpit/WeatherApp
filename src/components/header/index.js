@@ -24,8 +24,11 @@ export default class Header extends Component {
 
 	openSettings = () => this.dialog.MDComponent.show();
 
+	Settings = () => this.sett.MDComponent.show();
+
 	drawerRef = drawer => (this.drawer = drawer);
 	dialogRef = dialog => (this.dialog = dialog);
+	SettingsRef = sett => (this.sett = sett);
 
 	linkTo = path => () => {
 		route(path);
@@ -100,7 +103,7 @@ export default class Header extends Component {
 								<List.ItemIcon>chrome_reader_mode</List.ItemIcon>
 								QM Feed
 							</List.LinkItem>
-							<List.LinkItem onClick={this.openSettings}>
+							<List.LinkItem onClick={this.Settings}>
 								<List.ItemIcon>settings</List.ItemIcon>
 								Settings
 							</List.LinkItem>
@@ -141,6 +144,23 @@ export default class Header extends Component {
 						<Dialog.FooterButton accept>okay</Dialog.FooterButton>
 					</Dialog.Footer>
 				</Dialog>
+
+
+				<Dialog ref={this.SettingsRef}>
+  				<Dialog.Header>Settings</Dialog.Header>
+  				<Dialog.Body>
+					<div>
+						Enable dark theme <Switch onClick={this.toggleDarkTheme} />
+					</div>
+  				</Dialog.Body>
+  				<Dialog.Footer>
+    			<Dialog.FooterButton cancel={true}>Decline</Dialog.FooterButton>
+    			<Dialog.FooterButton accept={true}>Accept</Dialog.FooterButton>
+  				</Dialog.Footer>
+				</Dialog>
+
+
+
 			</div>
 		);
 	}
