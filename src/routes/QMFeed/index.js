@@ -10,7 +10,8 @@ export default class QMFeed extends Component {
 				<div class={style.QMFeed}>
 					<Card>
 						<Card.Primary>
-							<iframe src="https://feed.mikle.com/widget/v2/69051/" height="530px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe> 
+							//using an iframe to display the feed content on the page
+							<iframe src="https://feed.mikle.com/widget/v2/69051/" height="530px" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe>
 						</Card.Primary>
 					</Card>
 					</div>
