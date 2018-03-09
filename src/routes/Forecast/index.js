@@ -76,6 +76,7 @@ export default class Forecast extends Component {
 											<td></td>
                     </tr>
 										<tr>
+
 										<td></td>
 										<div class = {style.forecastData}>
 										<td>
@@ -94,6 +95,7 @@ export default class Forecast extends Component {
     );
   }
 
+// Sets the state with the data from the json
   parseResponse = (parsed_json) => {
       this.setState({locate: parsed_json['current_observation']['display_location']['full']});
       this.setState({temp: parsed_json['current_observation']['temp_c']});

@@ -1,5 +1,5 @@
 .profile {
-	padding: 20px;
+	padding: 20px; /* Adds spacing around the div container */
 	min-height: 100%;
 	width: 100%;
 }

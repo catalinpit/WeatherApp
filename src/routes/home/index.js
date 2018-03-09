@@ -11,11 +11,12 @@ import $ from 'jquery';
 
 export default class Home extends Component {
   // a constructor with initial set states
+
+  /* Initialise the constructor */
   constructor(props) {
     super(props);
-    // empty states intially
 
-    // geolookup, find the location of the user
+    // empty api states intially
     this.state.locate = "";
 
     // conditions
@@ -40,8 +41,9 @@ export default class Home extends Component {
       $.ajax({
         url: 'http://api.wunderground.com/api/214f1e00746632d6/conditions/astronomy/forecast/hourly/q/UK/London.json',
         dataType: 'jsonp',
-        // on success, fetch the data and set the state
+        // on success, fetch the data and set the states
         success: this.parseResponse,
+        // if failed display error message
         error: function(req, err){ console.log('API call failed ' + err); }
       });
     }
@@ -49,11 +51,12 @@ export default class Home extends Component {
     // executed after the first render only on the client side
     // where AJAX requests and DOM or state updates should occur
     // used to update the state so other lifecycle methods are triggered
+    // Calls the function above to fetch the data recieved from api
     componentDidMount = function() {
       this.getData();
     }
 
-    // display the webpage
+    // display the features of the api on the webpage
   render() {
     return (
       <div class={style.home}>
@@ -81,6 +84,7 @@ export default class Home extends Component {
     );
   }
 
+  // Sets the state with the data from the json
    parseResponse = (parsed_json) => {
             this.setState({locate: parsed_json['current_observation']['display_location']['full']});
             this.setState({temp: parsed_json['current_observation']['temp_c']});

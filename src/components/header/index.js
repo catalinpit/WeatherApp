@@ -33,8 +33,10 @@ export default class Header extends Component {
 	};
 
 	goHome = this.linkTo('/');
+	//Links to the folder containing the pages
 	goToForecast = this.linkTo('/Forecast');
 
+	//opens up new window in web browser
 	goToQMPlus = () => {
 		window.open("http://qmplus.qmul.ac.uk/", "_blank");
 	}

@@ -1,78 +1,96 @@
-.home {
-	padding: 20px;
-	min-height: 100%;
-	width: 100%;
+/***********************************************************************
+
+													CSS for Home Page
+
+***********************************************************************/
+
+.home
+{
+	padding: 20px; /* Adds spacing around the div container */
+	min-height: 100%; /* Set minimum height of div container */
+	width: 100%; /* Set width of div container */
 }
+
 .realFeel
 {
- text-align: center;
+ text-align: center; /* Place the feature of the api in the center of the page */
  font-size: 18px;
  font-weight: 500;
- margin-top: -5px;
+ margin-top: -5px; /* Reduce margin space from top of the feature */
 }
+
 .currentTemp
 {
-	text-align: center;
+	text-align: center; /* Place the feature of the api in the center of the page */
 	font-weight: bold;
 	font-size: 40px;
-	margin-top: -20px;
+	margin-top: -20px; /* Reduce margin space from top of the feature */
 }
+
 .cweatherImg
 {
-	text-align: center;
-	margin-top: -30px;
+	text-align: center; /* Place the feature of the api in the center of the page */
+	margin-top: -30px; /* Reduce margin space from top of the feature */
 }
+
 .weatherInfo
 {
-	text-align: center;
+	text-align: center; /* Place the feature of the api in the center of the page */
 	font-weight: 500;
-	margin-top: -10px;
+	margin-top: -10px; /* Reduce margin space from top of the feature */
 	font-size: 18px;
 }
+
 .windSpeed
 {
 	font-weight: 500;
-	text-align: center;
+	text-align: center; /* Place the feature of the api in the center of the page */
 	font-size: 18px;
 
 }
+
 .locationAddress
 {
 	font-size: 25px;
-	text-align: center;
-	margin-top: -30px;
-	margin-bottom: -30px;
+	text-align: center; /* Place the feature of the api in the center of the page */
+	margin-top: -30px; /* Reduce margin space from top of the feature */
+	margin-bottom: -30px; /* Reduce margin space from bottom of the feature */
 	font-weight: 500;
 }
+
 .sunriseTime
 {
 	font-size: 18px;
 	font-weight: 500;
-	text-align: left;
+	text-align: left; /* Place the feature of theb  nm ,m ., api to the left of the page */
 }
+
 .sunsetTime
 {
 	font-size: 18px;
 	font-weight: 500;
-	text-align: right;
-	margin-top: -41px;
+	text-align: right; /* Place the feature of the api to the right of the page */
+	margin-top: -41px; /* Reduce margin space from top of the feature */
 }
+
 .uvStyle
 {
-	text-align: right;
+	text-align: right; /* Place the feature of the api to the right of the page */
 	font-weight: 500;
 	font-size: 18px;
-	margin-top: -41px;
+	margin-top: -41px; /* Reduce margin space from top of the feature */
 }
+
 .humidityStyle
 {
-	text-align: left;
+	text-align: left; /* Place the feature of the api to the left of the page */
 	font-weight: 500;
 	font-size: 18px;
 }
+
 .visibilityStyle
 {
-	text-align: center;
+	text-align: center; /* Place the feature of the api in the center of the page */
 	font-weight: 500;
 	font-size: 18px;
 }
