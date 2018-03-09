@@ -38,8 +38,14 @@ export default class Header extends Component {
 	goToQMPlus = () => {
 		window.open("http://qmplus.qmul.ac.uk/", "_blank");
 	}
-	goToQMFeed = this.linkTo('/QMFeed');
 
+	goToQMFeed = this.linkTo('/QMFeed');
+	goToAlbany = this.linkTo('/Cities/Albany');
+	goToDubai = this.linkTo('/Cities/Dubai');
+	goToMexicoCity = this.linkTo('/Cities/MexicoCity');
+	goToMiami = this.linkTo('/Cities/Miami');
+	goToParis = this.linkTo('/Cities/Paris');
+	goToSanFrancisco = this.linkTo('/Cities/SanFrancisco');
 
 	toggleDarkTheme = () => {
 		this.setState(
@@ -95,6 +101,30 @@ export default class Header extends Component {
 							<List.LinkItem onClick={this.openSettings}>
 								<List.ItemIcon>settings</List.ItemIcon>
 								Settings
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToAlbany}>
+								<List.ItemIcon>cloud</List.ItemIcon>
+									New York
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToDubai}>
+								<List.ItemIcon>cloud</List.ItemIcon>
+									Dubai
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToMexicoCity}>
+								<List.ItemIcon>cloud</List.ItemIcon>
+									Mexico City
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToMiami}>
+								<List.ItemIcon>cloud</List.ItemIcon>
+									Miami
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToParis}>
+								<List.ItemIcon>cloud</List.ItemIcon>
+									Paris
+							</List.LinkItem>
+							<List.LinkItem onClick={this.goToSanFrancisco}>
+								<List.ItemIcon>cloud</List.ItemIcon>
+									San Francisco
 							</List.LinkItem>
 						</List>
 					</Drawer.TemporaryDrawerContent>
