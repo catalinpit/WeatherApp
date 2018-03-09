@@ -104,38 +104,37 @@ export default class Header extends Component {
 								<List.ItemIcon>settings</List.ItemIcon>
 								Settings
 							</List.LinkItem>
-							<List.LinkItem onClick={this.goToAlbany}>
-								<List.ItemIcon>cloud</List.ItemIcon>
-									New York
-							</List.LinkItem>
-							<List.LinkItem onClick={this.goToDubai}>
-								<List.ItemIcon>cloud</List.ItemIcon>
-									Dubai
-							</List.LinkItem>
-							<List.LinkItem onClick={this.goToMexicoCity}>
-								<List.ItemIcon>cloud</List.ItemIcon>
-									Mexico City
-							</List.LinkItem>
-							<List.LinkItem onClick={this.goToMiami}>
-								<List.ItemIcon>cloud</List.ItemIcon>
-									Miami
-							</List.LinkItem>
-							<List.LinkItem onClick={this.goToParis}>
-								<List.ItemIcon>cloud</List.ItemIcon>
-									Paris
-							</List.LinkItem>
-							<List.LinkItem onClick={this.goToSanFrancisco}>
-								<List.ItemIcon>cloud</List.ItemIcon>
-									San Francisco
-							</List.LinkItem>
 						</List>
 					</Drawer.TemporaryDrawerContent>
 				</Drawer.TemporaryDrawer>
 				<Dialog ref={this.dialogRef}>
-					<Dialog.Header>Settings</Dialog.Header>
+					<Dialog.Header>Search for other cities</Dialog.Header>
 					<Dialog.Body>
 						<div>
-							Enable dark theme <Switch onClick={this.toggleDarkTheme} />
+						<List.LinkItem onClick={this.goToAlbany}>
+							<List.ItemIcon>cloud</List.ItemIcon>
+								New York
+						</List.LinkItem>
+						<List.LinkItem onClick={this.goToDubai}>
+							<List.ItemIcon>cloud</List.ItemIcon>
+								Dubai
+						</List.LinkItem>
+						<List.LinkItem onClick={this.goToMexicoCity}>
+							<List.ItemIcon>cloud</List.ItemIcon>
+								Mexico City
+						</List.LinkItem>
+						<List.LinkItem onClick={this.goToMiami}>
+							<List.ItemIcon>cloud</List.ItemIcon>
+								Miami
+						</List.LinkItem>
+						<List.LinkItem onClick={this.goToParis}>
+							<List.ItemIcon>cloud</List.ItemIcon>
+								Paris
+						</List.LinkItem>
+						<List.LinkItem onClick={this.goToSanFrancisco}>
+							<List.ItemIcon>cloud</List.ItemIcon>
+								San Francisco
+						</List.LinkItem>
 						</div>
 					</Dialog.Body>
 					<Dialog.Footer>
