@@ -115,27 +115,27 @@ export default class Header extends Component {
 					<Dialog.Body>
 						<div>
 						<List.LinkItem onClick={this.goToAlbany}>
-							<List.ItemIcon>cloud</List.ItemIcon>
+							<List.ItemIcon>location_city</List.ItemIcon>
 								New York
 						</List.LinkItem>
 						<List.LinkItem onClick={this.goToDubai}>
-							<List.ItemIcon>cloud</List.ItemIcon>
+							<List.ItemIcon>location_city</List.ItemIcon>
 								Dubai
 						</List.LinkItem>
 						<List.LinkItem onClick={this.goToMexicoCity}>
-							<List.ItemIcon>cloud</List.ItemIcon>
+							<List.ItemIcon>location_city</List.ItemIcon>
 								Mexico City
 						</List.LinkItem>
 						<List.LinkItem onClick={this.goToMiami}>
-							<List.ItemIcon>cloud</List.ItemIcon>
+							<List.ItemIcon>location_city</List.ItemIcon>
 								Miami
 						</List.LinkItem>
 						<List.LinkItem onClick={this.goToParis}>
-							<List.ItemIcon>cloud</List.ItemIcon>
+							<List.ItemIcon>location_city</List.ItemIcon>
 								Paris
 						</List.LinkItem>
 						<List.LinkItem onClick={this.goToSanFrancisco}>
-							<List.ItemIcon>cloud</List.ItemIcon>
+							<List.ItemIcon>location_city</List.ItemIcon>
 								San Francisco
 						</List.LinkItem>
 						</div>
@@ -154,8 +154,7 @@ export default class Header extends Component {
 					</div>
   				</Dialog.Body>
   				<Dialog.Footer>
-    			<Dialog.FooterButton cancel={true}>Decline</Dialog.FooterButton>
-    			<Dialog.FooterButton accept={true}>Accept</Dialog.FooterButton>
+
   				</Dialog.Footer>
 				</Dialog>
 
