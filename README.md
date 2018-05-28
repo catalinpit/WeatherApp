@@ -1,6 +1,6 @@
 ## GROUP 33 Graphical User Interface Module - Iphone Weather Application
 
-<img src="https://i.imgur.com/EnWC9a4.png" width="300" align="right">
+<img src="https://i.imgur.com/EnWC9a4.png" width="300" align="left">
 <img src="https://i.imgur.com/V0WYwRx.png" width="300" align="right">
 <img src="https://i.imgur.com/hJ1c0jh.png" width="300" align="right">
 <img src="https://i.imgur.com/UAxRzJR.png" width="300" align="right">
