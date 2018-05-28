@@ -1,13 +1,7 @@
 ## GROUP 33 Graphical User Interface Module - Iphone Weather Application
 
-<img src="https://i.imgur.com/EnWC9a4.png" width="300" align="left">
-<img src="https://i.imgur.com/V0WYwRx.png" width="300" align="left">
-<img src="https://i.imgur.com/hJ1c0jh.png" width="300" align="left">
-<img src="https://i.imgur.com/UAxRzJR.png" width="300" align="left">
-<img src="https://i.imgur.com/0PFN4w5.png" width="300" align="left">
-<img src="https://i.imgur.com/SrKS9d4.png" width="300" align="left">
+[Link to the application.](https://github.com/catalinpit/WeatherApp/wiki/Weather-Application)
 
-<br />
 ## Contributors:
 - Chowdhury, Masud Hasan
 - Ghani, Omar
