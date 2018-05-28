@@ -7,6 +7,7 @@
 <img src="https://i.imgur.com/0PFN4w5.png" width="300" align="left">
 <img src="https://i.imgur.com/SrKS9d4.png" width="300" align="left">
 
+<br />
 ## Contributors:
 - Chowdhury, Masud Hasan
 - Ghani, Omar
