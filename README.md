@@ -1,6 +1,6 @@
 ## GROUP 33 Graphical User Interface Module - Iphone Weather Application
 
-![Homepage](https://i.imgur.com/EnWC9a4.png)
+![Homepage](https://i.imgur.com/EnWC9a4.png){:height="700px" width="400px"}
 
 ## Contributors:
 - Chowdhury, Masud Hasan
