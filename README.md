@@ -5,7 +5,7 @@
 
 > We managed to get a score of 94% for the application implementation and a score of 92.5% overall (including stakeholder research, requirements analysis, application design, implementation and evaluation).
 
-![ProjectGrade](blob:https://imgur.com/76ffb907-c8f0-468f-9229-1a335405cb9e)
+![ProjectGrade](https://i.imgur.com/VJt99r0.png)
 
 ## Contributors:
 - Chowdhury, Masud Hasan
