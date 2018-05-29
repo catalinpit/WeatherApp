@@ -1,6 +1,11 @@
 ## GROUP 33 Graphical User Interface Module - Iphone Weather Application
+> This application was built for the Graphical User Interface Module as a group project. My responsibility was to develop the code and to implement the Weather Underground API.
 
 [Link to the application.](https://github.com/catalinpit/WeatherApp/wiki/Weather-Application)
+
+> We managed to get a score of 94% for the application implementation and a score of 92.5% overall (including stakeholder research, requirements analysis, application design, implementation and evaluation).
+
+![ProjectGrade](blob:https://imgur.com/76ffb907-c8f0-468f-9229-1a335405cb9e)
 
 ## Contributors:
 - Chowdhury, Masud Hasan
@@ -9,7 +14,6 @@
 - Imran, Anees
 - Iqram, Shah
 - Pit, Catalin-Marinel
-> Implemented API and everything that belongs to it
 
 ## Install dependencies:
 > npm install
